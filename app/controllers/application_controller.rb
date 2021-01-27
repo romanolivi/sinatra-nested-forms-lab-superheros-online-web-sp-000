@@ -15,7 +15,7 @@ class App < Sinatra::Base
       SuperHero.new(t)
     end
     
-    @hero = SuperHero.all
+    @heroes = SuperHero.all
     
   end
 end
