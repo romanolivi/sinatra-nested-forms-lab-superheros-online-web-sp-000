@@ -9,8 +9,7 @@ class App < Sinatra::Base
   end
 
   post "/teams" do 
-    @team = Team.new(name: params[:team][:name], motto: params[:team][:motto])
-    
+    @team = Team.new(params[:team])
     members = SuperHero.new
   
 end
